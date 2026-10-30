@@ -1,0 +1,47 @@
+# Environment & Secrets
+.env
+.env.backup
+.env.production
+*.service-account.json
+firebase-credentials.json
+firebase-service-account.json
+service-account*.json
+google-services.json
+GoogleService-Info.plist
+
+# Local & IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Laravel
+/backend/vendor/
+/backend/node_modules/
+/backend/public/storage
+/backend/storage/*.key
+/backend/storage/oauth-*.key
+/backend/storage/framework/cache/*
+/backend/storage/framework/sessions/*
+/backend/storage/framework/views/*
+/backend/storage/logs/*
+/backend/database/*.sqlite
+/backend/database/*.sqlite-journal
+
+# Flutter / Dart
+/mobile/.dart_tool/
+/mobile/.flutter-plugins
+/mobile/.flutter-plugins-dependencies
+/mobile/.packages
+/mobile/.pub-cache/
+/mobile/.pub/
+/mobile/build/
+/mobile/android/local.properties
+/mobile/android/.gradle/
+/mobile/android/app/build/
+/mobile/ios/.symlinks/
+/mobile/ios/Pods/
+/mobile/ios/Podfile.lock
+
