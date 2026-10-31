@@ -4,10 +4,13 @@
 .env.production
 *.service-account.json
 firebase-credentials.json
+firebase_credentials.json
+*firebase*credentials*.json
 firebase-service-account.json
 service-account*.json
 google-services.json
 GoogleService-Info.plist
+firebase_options.dart
 
 # Local & IDE
 .idea/
@@ -23,6 +26,7 @@ Thumbs.db
 /backend/public/storage
 /backend/storage/*.key
 /backend/storage/oauth-*.key
+/backend/storage/*.json
 /backend/storage/framework/cache/*
 /backend/storage/framework/sessions/*
 /backend/storage/framework/views/*
@@ -44,4 +48,3 @@ Thumbs.db
 /mobile/ios/.symlinks/
 /mobile/ios/Pods/
 /mobile/ios/Podfile.lock
-
