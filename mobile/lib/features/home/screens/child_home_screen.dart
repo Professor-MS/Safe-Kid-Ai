@@ -88,35 +88,35 @@ class ChildHomeScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 16),
 
-          // Mandatory Location Sharing Transparency Indicator
+          // Location Sharing Status Indicator (Pending Milestone 2 & 3)
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.amber.shade50,
+              color: Colors.grey.shade100,
               borderRadius: BorderRadius.circular(14),
-              border: Border.all(color: Colors.amber.shade300),
+              border: Border.all(color: Colors.grey.shade300),
             ),
             child: Row(
               children: [
-                Icon(Icons.location_on, color: Colors.amber.shade900, size: 28),
+                Icon(Icons.link_off, color: Colors.grey.shade700, size: 28),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Location Sharing Status',
+                      const Text(
+                        'Not linked to a parent',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.amber.shade900,
+                          color: AppTheme.textDark,
                           fontSize: 14,
                         ),
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        'Not currently active (No linked parent yet)',
+                        'Location sharing is inactive until paired with a parent.',
                         style: TextStyle(
-                          color: Colors.amber.shade900.withValues(alpha: 0.8),
+                          color: Colors.grey.shade600,
                           fontSize: 12,
                         ),
                       ),
